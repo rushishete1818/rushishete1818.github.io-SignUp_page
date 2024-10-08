@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins" sans-serif ;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(signup-page-background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.wrapper{
+    width: 450px;
+    height: 600px;
+    border-radius: 20px;
+    padding: 100px 35px;
+    border: 3px solid;
+    color: #fff;
+    backdrop-filter: blur(5px);
+}
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+}
+.wrapper .input-box{
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+     position: relative; /*this is for user logo and lock logo */
+     border: 50px;
+     outline: 50px;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 15px;
+    outline: 5px;
+    border: 4px solid rgb(251, 247, 247);
+    border-radius: 20px; 
+    padding: 20px 45px 20px 20px;
+
+}
+
+.eye{
+    position: absolute;
+}
+
+.eye-open{
+    position: absolute;
+}
+.input-box input::placeholder{
+    font-size: 16px;
+    color: gray;
+    font-weight: bold;
+}
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 30%;
+    transform: translate(-10%);
+    font-size: 20px;
+    color: #fff;
+}
+.wrapper .remember-forgot{
+    display: flex;/*use of display flex is iteams are in a row like remember-forgot */
+    justify-content: space-between;
+    font-size: 15px;
+    margin: -1px 0 15px;
+    margin-left: 3px;
+    color: #fff;
+}
+.remember-forgot label input{
+   accent-color: #fff;
+   margin-right: 3px;
+}
+.remember-forgot a{
+    color: #fff;
+    margin-right: 5px;
+    text-decoration: none;
+}
+.remember-forgot a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.remember-forgot a:active{
+    opacity: 0.5;
+}
+.wrapper .btn{
+ width: 100%;
+ height: 45px;
+ background-color: #fff;
+ outline: none;
+ border: none;
+ border-radius: 20px;
+ box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+ cursor: pointer;
+ font-size: 15px;
+ font-weight: 600;
+ color: aqua;
+}
+.wrapper .btn:hover{
+ opacity: 0.9;
+}
+.wrapper .btn:active{
+    opacity: 0.7;
+}
+.wrapper .register-link{
+    color: #fff;
+    margin: 20px;
+    padding-left: 20%;
+}
+.register-link a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+.register-link p a:hover{
+    text-decoration: underline;
+}
+.register-link p a:active{
+    opacity: 0.5;
+}
+.input-box img{
+    position: absolute;
+    width: 20px;
+    cursor: pointer;
+    right: 50px;
+    top: 19px;
+}
+
+#eye-open{
+    display: none;
+}

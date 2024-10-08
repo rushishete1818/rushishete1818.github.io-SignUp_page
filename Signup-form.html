@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup form</title>
+    <link rel="stylesheet" href="Signup-form.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+</head>
+<body>
+    <div class="wrapper">
+        <form action="">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Username" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">        
+                <input type="password" placeholder="Password" id="password" required >
+                <span class="eye" onclick="myFunction()">
+                    <img src="eye-open.png" id="eye-open" alt="">
+                    <img src="eye-close.png" id="eye-close">
+                </span>
+
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox">Remember Me</label>
+                <a href="#">Forgot Password</a>
+            </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="register-link">
+                    <p>Dont have an account? <a href="http://127.0.0.1:5500/MY%20HTML%20PROJECT/Signup-form/Register-form.html">Register</a></p>
+                </div> 
+        </form>
+    </div>   
+    <script>
+
+     function myFunction(){
+         var x = document.getElementById("password");
+         var y = document.getElementById("eye-close");
+         var z = document.getElementById("eye-open");
+
+         if (x.type === 'password') {
+            x.type = "text"
+            y.style.display = "none";
+            z.style.display = "block";
+         }else{
+            x.type = "password"
+            y.style.display = "block";
+            z.style.display = "none";
+         }
+      }
+    </script> 
+</body>
+</html>
