@@ -12,7 +12,7 @@ body{
     background: url(signup-page-background.jpg) no-repeat;
     background-size: cover;
     background-position: center;
-    margin: 25px;
+    margin-inline: 18px;
 }
 .wrapper{
     width: 450px;
@@ -145,7 +145,7 @@ body{
     .register-link p{
         text-align: center;
         padding-right: 82px;
-        font-size: 2rem;
+        font-size: 0.9rem;
     }
     body{
         min-height: 94.7vh;
